@@ -1,141 +1,74 @@
-💼 Business Card – Jetpack Compose
+                   * Business Card – Jetpack Compose
 
-Application Android développée avec Jetpack Compose (Material 3) qui affiche une carte de visite moderne et responsive.
+Application Android simple développée avec Kotlin et Jetpack Compose (Material 3).
 
-Ce projet a été réalisé dans le cadre d’un TP pratique afin de maîtriser les bases de Compose :
-📐 Layouts – 🎨 Material 3 – 🧩 Composables – 📱 UI structurée.
+Elle affiche une carte de visite contenant un logo, un nom, un titre et des informations de contact.
 
-📱 Aperçu de l’application
-
-L’interface est organisée en deux sections principales :
-
-🔹 1️⃣ Identity Section
-
-Logo Android
-
-Nom complet
-
-Titre / Rôle
-
-🔹 2️⃣ Contact Section
-
-Numéro de téléphone
-
-Email
-
-Handle / lien
-
-Icônes Material alignées avec chaque information
-
-L’écran est construit avec des Column, Row, Spacer et Modifier pour assurer un alignement propre et un espacement cohérent.
 
 🛠 Technologies utilisées
 
-📱 Android
+* Kotlin
 
-💻 Kotlin
+* Jetpack Compose
 
-🎨 Jetpack Compose
+* Material 3
 
-🧱 Material 3
+* Android Studio
 
-🧩 Architecture simple basée sur des Composables réutilisables
+🚀 Installation et exécution
 
-⚙️ Prérequis
+* Cloner le projet :
 
-Android Studio (version récente recommandée)
+- git clone https://github.com/Balkissdmi/business-card-compose.git
 
-SDK Android installé
+* Ouvrir le dossier dans Android Studio
 
-Émulateur Android ou téléphone physique avec mode développeur activé
+* Laisser Gradle se synchroniser
 
+* Cliquer sur ▶ Run pour lancer l’application
 
-🚀 Installation & Lancement
+🧠 Structure du projet
 
-1️⃣ Cloner le projet
+* MainActivity.kt → Point d’entrée de l’application
 
-git clone https://github.com/Balkissdmi/business-card-compose.git
+* BusinessCardScreen() → Composable principal
 
-2️⃣ Ouvrir dans Android Studio
+* IdentitySection() → Affiche le logo, le nom et le titre
 
-File → Open
+* ContactSection() → Affiche les coordonnées
 
-Sélectionner le dossier du projet
+📌 Fonctionnement du code
 
-3️⃣ Synchroniser Gradle
+* setContent {} initialise l’interface en Jetpack Compose
 
-La synchronisation démarre automatiquement.
-Sinon :
+* Column organise les éléments verticalement
 
-File → Sync Project with Gradle Files
-4️⃣ Lancer l’application
+* Row aligne les icônes et le texte horizontalement
 
-Cliquer sur ▶ Run
+* Image() charge le logo depuis res/drawable
 
-Choisir un émulateur ou un appareil connecté
+* Text() affiche les informations (nom, titre, contacts)
 
-🏗 Structure du code
-
-📂 app/src/main/java/com/example/businesscard/
-
-MainActivity.kt → Point d’entrée de l’application
-
-BusinessCardScreen() → Composable principal
-
-IdentitySection() → Affichage du logo + nom + titre
-
-ContactSection() → Bloc contenant les coordonnées
-
-ContactRow() → Ligne de contact avec icône + texte
-
-🖼 Ressources
-
-Logo placé dans :
-
-app/src/main/res/drawable/android_logo.png
-
-Pour le modifier :
-
-Remplacer l’image dans res/drawable
-
-Adapter le nom dans R.drawable.nom_image si nécessaire
+Le projet utilise des composables réutilisables pour garder le code propre et structuré.
 
 🎨 Personnalisation
 
-Dans MainActivity.kt, tu peux modifier :
+Dans MainActivity.kt, vous pouvez modifier :
 
-name = "Balkiss Doulemi"
+- Nom
 
-title = "IT Student & Mobile Developer"
+- Titre
 
-phone = "+216 21 489 633"
+- Téléphone
 
-email = "balkiss.dmi13@gmail.com"
+- Email
 
-handle = "@balkiss"
-
-📦 Générer un APK
-
-Build → Build Bundle(s) / APK(s) → Build APK(s)
-
-L’APK sera généré dans le dossier app/build/outputs/apk/.
-
-🎯 Objectifs pédagogiques
-
-✔ Comprendre la structure d’une app Compose
-
-✔ Utiliser Material 3
-
-✔ Gérer les layouts (Column / Row / Alignment)
-
-✔ Créer des composables réutilisables
-
-✔ Structurer un projet Android proprement
-
+- Handle
 
 👩‍💻 Auteur
 
 Balkiss Doulemi
-🎓 IT Student
-📱 Mobile Development Enthusiast
-🔗 GitHub : https://github.com/Balkissdmi
+
+IT Student – Mobile Development
+
+GitHub : https://github.com/Balkissdmi
