@@ -1,80 +1,141 @@
-# Business Card (Jetpack Compose)
+💼 Business Card – Jetpack Compose
 
-Application Android simple qui affiche une carte de visite en **Jetpack Compose**.
+Application Android développée avec Jetpack Compose (Material 3) qui affiche une carte de visite moderne et responsive.
 
-## Aperçu
+Ce projet a été réalisé dans le cadre d’un TP pratique afin de maîtriser les bases de Compose :
+📐 Layouts – 🎨 Material 3 – 🧩 Composables – 📱 UI structurée.
 
-L’écran est découpé en 2 sections :
+📱 Aperçu de l’application
 
-- **Section 1 (Identité)** : logo + nom + titre
-- **Section 2 (Coordonnées)** : téléphone + lien/handle + email (avec icônes)
+L’interface est organisée en deux sections principales :
 
-## Technologies
+🔹 1️⃣ Identity Section
 
-- Android
-- Kotlin
-- Jetpack Compose (Material 3)
+Logo Android
 
-## Prérequis
+Nom complet
 
-- **Android Studio** (version récente recommandée)
-- Un émulateur Android ou un téléphone avec le **mode développeur** activé
+Titre / Rôle
 
-## Installation / Lancement
+🔹 2️⃣ Contact Section
 
-1. Cloner le projet
+Numéro de téléphone
 
-```bash
-git clone https://github.com/<ton-username>/<ton-repo>.git
-```
+Email
 
-2. Ouvrir dans Android Studio
+Handle / lien
 
-- `File` > `Open...`
-- Sélectionne le dossier du projet
+Icônes Material alignées avec chaque information
 
-3. Synchroniser Gradle
+L’écran est construit avec des Column, Row, Spacer et Modifier pour assurer un alignement propre et un espacement cohérent.
 
-- Android Studio lance en général la sync automatiquement
-- Sinon : `File` > `Sync Project with Gradle Files`
+🛠 Technologies utilisées
 
-4. Lancer l’application
+📱 Android
 
-- Clique sur **Run** (triangle vert)
-- Choisis un **émulateur** ou ton **téléphone**
+💻 Kotlin
 
-## Structure du code
+🎨 Jetpack Compose
 
-- UI principale : `app/src/main/java/com/example/businesscard/MainActivity.kt`
-  - `BusinessCardScreen()` : écran complet
-  - `IdentitySection()` : logo + nom + titre
-  - `ContactSection()` / `ContactRow()` : lignes de contact avec icônes
+🧱 Material 3
 
-## Ressources (logo)
+🧩 Architecture simple basée sur des Composables réutilisables
 
-Le logo est placé dans :
+⚙️ Prérequis
 
-- `app/src/main/res/drawable/android_logo.png`
+Android Studio (version récente recommandée)
 
-Si tu veux remplacer le logo :
+SDK Android installé
 
-- remplace le fichier dans `res/drawable/`
-- garde le nom `android_logo.png` (ou change le nom et adapte `R.drawable...` dans le code)
+Émulateur Android ou téléphone physique avec mode développeur activé
 
-## Personnalisation
 
-Dans `MainActivity.kt`, tu peux modifier :
+🚀 Installation & Lancement
 
-- Le nom : `name = "Balkiss Doulemi"`
-- Le titre : `title = "Student Developer"`
-- Téléphone : `phone = "+21621489633"`
-- Email : `email = "balkiss.dmi13@gmail.com"`
-- Handle : `handle = "@balkiss"`
+1️⃣ Cloner le projet
 
-## Build APK (optionnel)
+git clone https://github.com/Balkissdmi/business-card-compose.git
 
-- `Build` > `Build Bundle(s) / APK(s)` > `Build APK(s)`
+2️⃣ Ouvrir dans Android Studio
 
-## Auteur
+File → Open
 
-- **Balkiss Doulemi**
+Sélectionner le dossier du projet
+
+3️⃣ Synchroniser Gradle
+
+La synchronisation démarre automatiquement.
+Sinon :
+
+File → Sync Project with Gradle Files
+4️⃣ Lancer l’application
+
+Cliquer sur ▶ Run
+
+Choisir un émulateur ou un appareil connecté
+
+🏗 Structure du code
+
+📂 app/src/main/java/com/example/businesscard/
+
+MainActivity.kt → Point d’entrée de l’application
+
+BusinessCardScreen() → Composable principal
+
+IdentitySection() → Affichage du logo + nom + titre
+
+ContactSection() → Bloc contenant les coordonnées
+
+ContactRow() → Ligne de contact avec icône + texte
+
+🖼 Ressources
+
+Logo placé dans :
+
+app/src/main/res/drawable/android_logo.png
+
+Pour le modifier :
+
+Remplacer l’image dans res/drawable
+
+Adapter le nom dans R.drawable.nom_image si nécessaire
+
+🎨 Personnalisation
+
+Dans MainActivity.kt, tu peux modifier :
+
+name = "Balkiss Doulemi"
+
+title = "IT Student & Mobile Developer"
+
+phone = "+216 21 489 633"
+
+email = "balkiss.dmi13@gmail.com"
+
+handle = "@balkiss"
+
+📦 Générer un APK
+
+Build → Build Bundle(s) / APK(s) → Build APK(s)
+
+L’APK sera généré dans le dossier app/build/outputs/apk/.
+
+🎯 Objectifs pédagogiques
+
+✔ Comprendre la structure d’une app Compose
+
+✔ Utiliser Material 3
+
+✔ Gérer les layouts (Column / Row / Alignment)
+
+✔ Créer des composables réutilisables
+
+✔ Structurer un projet Android proprement
+
+
+👩‍💻 Auteur
+
+Balkiss Doulemi
+🎓 IT Student
+📱 Mobile Development Enthusiast
+🔗 GitHub : https://github.com/Balkissdmi
